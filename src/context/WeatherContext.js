@@ -16,7 +16,7 @@ export const WeatherProvider = ({children}) => {
         
         let config = {
             headers: {
-                authorization:'apikey 5dK6hBrLKijuoBe86vNeZ2:6pjSPd5hG01q1Kye0U6CIG',
+                authorization:'YOUR API KEY',
                 'content-type':'application/json'
             }
           
