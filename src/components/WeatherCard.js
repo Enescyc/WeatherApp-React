@@ -19,14 +19,14 @@ function WeatherCard() {
                 weatherData != null ? weatherData.result.map((result, index) => {
                     return (
 
-                        <div key={index} className="w-48 m-5 px-3 py-3 text-center shadow-2xl hover:px-1 hover:py-1">
+                        <div key={index} className="flex flex-col items-center w-72 m-5 px-5 py-5 text-center shadow-2xl hover:w-80 hover:text-2yx hover:px-10 ">
                             <h1 className='p-2 m-2 text-white'>{result.date}</h1>
                             <h1 className='p-2 m-2 text-white'>{result.day}</h1>
                             <hr/>
-                            <img alt="IMG" src={result.icon} className="w-auto h-auto mt-5"></img>
+                            <img alt="IMG" src={result.icon} className="w-24 h-auto mt-5"></img>
                             <h5 className='text-white mt-2'>{result.description.toUpperCase()}</h5>
-                            <h2 className='p-2 m-2 text-white' >Maksimum Sıcaklık: {result.max}</h2>
-                            <h2 className='p-2 m-2 text-white' >Minimum Sıcaklık Sıcaklık: {result.min}</h2>
+                            <h2 className='p-2 m-2 text-white' >{context.language ==="tr" ? "Maksimum Sıcaklık:"+ result.max : "Maximum Tempeature:"+ result.max}</h2>
+                            <h2 className='p-2 m-2 text-white' >{context.language ==="tr" ? "Minimum Sıcaklık:"+ result.max : "Minimum Tempeature:"+ result.max}</h2>
 
                         </div>
                     )
