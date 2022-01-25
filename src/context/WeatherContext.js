@@ -7,7 +7,7 @@ const WeatherContext = createContext();
 export const WeatherProvider = ({children}) => {
         const [city,setCity] = useState('Ankara');
         const [data,setData] = useState(null);
-        const [language,setLanguage]= useState("en");
+        const [language,setLanguage]= useState("tr");
 
 
         const baseURL ='https://api.collectapi.com/weather/getWeather?';
@@ -15,9 +15,9 @@ export const WeatherProvider = ({children}) => {
         let cityName ='&data.city='+city;
         let url = baseURL+languageStr+cityName;
         
-        let config = {
+        const config = {
             headers: {
-                authorization:'apikey 5dK6hBrLKijuoBe86vNeZ2:6pjSPd5hG01q1Kye0U6CIG',
+                authorization:'YOUR API KEY',
                 'content-type':'application/json'
             }
           
