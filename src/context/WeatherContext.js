@@ -23,20 +23,6 @@ export const WeatherProvider = ({children}) => {
           
         }
         
-
-        useEffect(()=> {
-                
-                axios.get(url,config) 
-                .then(data => setData(data.data))
-                
-        },[city]);
-        useEffect(()=> {
-                
-            axios.get(url,config) 
-            .then(data => setData(data.data))
-            
-    },[language]);
-
         
         useEffect(()=> {
            
@@ -44,7 +30,14 @@ export const WeatherProvider = ({children}) => {
            .then(data => setData(data.data))
            
          
-        },[])
+        },[city])
+        useEffect(()=> {
+           
+            axios.get(url,config) 
+            .then(data => setData(data.data))
+            
+          
+         },[language])
 
         const values = {
             city,
