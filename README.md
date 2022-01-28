@@ -25,4 +25,5 @@ In the project directory, you can run:
 
 
 ## Eğer projeyi inceleme şansınız olur ise olumlu olumsuz eleştirilerinizi ve varsa bulmuş olduğunuz uygulama açıklarını mail üzerinden iletebilirsiniz.
-![alt text](Anasayfa.png)
+
+![alt text](https://github.com/Enescyc/WeatherApp-React/blob/master/public/WeatherAPP.png)
