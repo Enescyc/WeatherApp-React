@@ -4,10 +4,10 @@
 ### Projeyi düzgün bir şekilde çalıştırabilmeniz için   https://collectapi.com/tr/ adresinden geçerli bir key generate edip src/context/WeatherContext.js içerisindeki
 
 ` const config = {
-`         headers: {
-`              authorization:'YOUR API KEY',
-`            'content-type':'application/json'
-`       } 
+         headers: {
+              authorization:'YOUR API KEY',
+            'content-type':'application/json'
+     } `  
           
         
         
